@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--ลิ่งเชื่อมไป icon fontavesome-->
+   
+     <!--ลิ้งค์ cdnของตัว jquery ตัวเลื่อนของภาพ-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!--ลิ่งเชื่อมไป owlcarousel2 ตัวเบสิกเเบบเลื่อน-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--ลิ้งค์ cdnของตัว jquery ตัวเลื่อนของภาพ-->
+    
+    
+
+    <!-- ทำหน้าที่ ซ้อนสกอเม้า -->
+     <style>
+        /* ซ่อนสกอลล์บาร์ใน Chrome/Safari/Opera */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        /* ซ่อนใน Firefox/Edge/IE */
+        .no-scrollbar {
+            -ms-overflow-style: none;   /* IE/Edge legacy */
+            scrollbar-width: none;      /* Firefox */
+        }
+    </style>
+    <!-- ทำหน้าที่ ซ้อนสกอเม้า -->
+    
+
+</head>
+<body class="bg-[#181a1e] text-white ">
+    <div class="container w-screen min-h-screen flex relative ">
+        
+        <!-- navbar section  -->
+
+            <div class="flex items-center justify-between top-0 left-0 h-20 w-full px-10 shadow-lg fixed  ">
+                <div class="flex  items-center ">
+                    <div class="h-12 w-12 mr-4 rounded-full bg-gradient-to-br from-red-500/30 to-blue-500/30 ring-1 ring-zinc-800 ">
+                        <img  src="../photo/เห็ดน้อยน่ารัก.png" alt="">
+                    </div>
+                    <span class="text-2xl  font-bold tracking-tight">Mushroom <span class="text-orange-500 ml-1  "> Project</span></span>
+                        <h2 class="text-3xl font-bold ml-16">Computer</h2> 
+                </div>
+
+                <div class="flex items-center gap-8">
+
+                    <div class="text-2xl">
+                        <p class="mr-2"></p>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbJ0QY1OKIHSbuqojiOZ_6-NJk0xx6YrK7zOuc3WO0qvxrFA/viewform"><i class="fa-solid fa-comment"></i></a> 
+                        </div>
+                        
+                        <div class="">
+                            <a href="home.html"><i class="fa-solid fa-house"></i></a> 
+                        </div>
+                        
+                        <div class="">
+                            <a href=""><i class="fa-solid fa-bell"></i></a> 
+                        </div>
+                        
+                            
+                        <div class="flex items-center">
+                            <img 
+                            class="h-12 w-12 object-cover border-2 rounded-full"
+                            src="../photo/เห็ดน้อยน่ารัก.png" alt="">
+                        </div>
+                
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        <!-- navbar section  -->
+
+        <!-- sidebar section -->
+
+            <div class="flex flex-col fixed top-24 w-60 h-[800px] rounded-3xl ml-10 z-5 space-y-5 p-5 bg-[#202528]" >
+                
+                <div class="flex items-center justify-center mt-4 ">
+                    <img 
+                    class="h-32 w-32 rounded-full object-cover "
+                    src="../photo/เห็ดน้อยน่ารัก.png" alt="รูปโปรไฟล์เว็บไซต์ sidebar">
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <p class="text-gray-400">Computer :<span class="text-white"> เเนะนำ</span></p>
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <p class="text-gray-400">เเนะนำคอมพิวเตอร์</p>
+                </div>
+         
+        
+                <!-- section button -->
+                                        
+                        <div class="flex flex-col items-center h-full pt-5 gap-6">
+                                        
+                            <div class="flex items-center   hover:bg-[#181a1e] 
+                                        hover:shadow-lg hover:shadow-orange-400 hover:scale-105 transition-transfrom duration-700 
+                                        px-10 py-3 w-full rounded-xl ease-in-out">
+                                <a href="#CPU" class="flex items-center justify-center ">
+                                    <i class="fa-solid fa-list text-orange-500 text-xl mr-6"></i>
+                                    <h2 class="w-full  font-semibold">CPU</h2>
+                                </a>
+                            </div>
+                                        
+                            <div class="flex items-center   hover:bg-[#181a1e] 
+                                        hover:shadow-lg hover:shadow-orange-400 hover:scale-105 transition-transfrom duration-700 
+                                        px-10 py-3 w-full rounded-xl ease-in-out">
+                                <a href="#MAINBOARD" class="flex items-center justify-center ">
+                                    <i class="fa-solid fa-list text-orange-500 text-xl mr-6"></i>
+                                    <h2 class="w-full  font-semibold">MB</h2>
+                                </a>
+                            </div>
+                                        
+                            <div class="flex items-center   hover:bg-[#181a1e] 
+                                        hover:shadow-lg hover:shadow-orange-400 hover:scale-105 transition-transfrom duration-700 
+                                        px-10 py-3 w-full rounded-xl ease-in-out">
+                                <a href="#GPU" class="flex items-center justify-center ">
+                                    <i class="fa-solid fa-list text-orange-500 text-xl mr-6"></i>
+                                    <h2 class="w-full  font-semibold">GPU</h2>
+                                </a>
+                            </div>
+                                        
+                            <div class="flex items-center   hover:bg-[#181a1e] 
+                                        hover:shadow-lg hover:shadow-orange-400 hover:scale-105 transition-transfrom duration-700 
+                                        px-10 py-3 w-full rounded-xl ease-in-out">
+                                <a href="#RAM" class="flex items-center justify-center ">
+                                    <i class="fa-solid fa-list text-orange-500 text-xl mr-6"></i>
+                                    <h2 class="w-full  font-semibold">RAM</h2>
+                                </a>
+                            </div>
+                                        
+                            <div class="flex items-center   hover:bg-[#181a1e] 
+                                        hover:shadow-lg hover:shadow-orange-400 hover:scale-105 transition-transfrom duration-700 
+                                        px-10 py-3 w-full rounded-xl ease-in-out">
+                                <a href="#M.2" class="flex items-center justify-center ">
+                                    <i class="fa-solid fa-list text-orange-500 text-xl mr-6"></i>
+                                    <h2 class="w-full  font-semibold">M.2</h2>
+                                </a>
+                            </div>
+                                        
+                            <div class="flex items-center   hover:bg-[#181a1e] 
+                                        hover:shadow-lg hover:shadow-orange-400 hover:scale-105 transition-transfrom duration-700 
+                                        px-10 py-3 w-full rounded-xl ease-in-out">
+                                <a href="#MONITOR " class="flex items-center justify-center ">
+                                    <i class="fa-solid fa-list text-orange-500 text-xl mr-6"></i>
+                                    <h2 class="w-full  font-semibold">MONITOR</h2>
+                                </a>
+                            </div>
+                                        
+                            <div class="flex items-center  hover:bg-[#181a1e] 
+                                        hover:shadow-lg hover:shadow-orange-400 hover:scale-105 transition-transfrom duration-700 
+                                        px-10 py-3 w-full rounded-xl ease-in-out">
+                                <a href="#Gaming Gear" class="flex items-center justify-center ">
+                                    <i class="fa-solid fa-list text-orange-500 text-xl mr-6"></i>
+                                    <h2 class="w-full  font-semibold">GAMING</h2>
+                                </a>
+                            </div>
+                            
+                        </div>
+
+                <!-- section button -->
+
+            </div>
+        
+        <!-- sidebar section -->  
+        
+        <!-- content section  -->
+
+        
+            <section>
+                <div class="flex fixed top-24   ml-80 z-50 ">
+                   <section class="w-full flex  mt-">
+                    <div class="relative w-[1200px] h-52 overflow-hidden rounded-xl shadow-lg">
+                        <!-- ตัว track ที่เลื่อน -->
+                        <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+                        <img src="../photo/1/computer.png" class="w-full flex-shrink-0 object-cover" alt="">
+                        <img src="../photo/1/742f704c-c9e3-4ab5-a78f-2a6439d2c4b3.jpg" class="w-full flex-shrink-0 object-cover" alt="">
+                        <img src="../photo/1/a2043b4d-dd48-4fa8-8eb5-496987fc8489.jpg" class="w-full flex-shrink-0 object-cover" alt="">
+                        </div>
+
+                        <!-- ปุ่มซ้าย-ขวา -->
+                        <button id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center">‹</button>
+                        <button id="next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center">›</button>
+                    </div>
+                   </section>   
+                </div>
+            </section>
+                            
+            
+            
+                
+                <section class="mt-[320px] w-[1200px]  ml-80">    
+                        
+                        
+                    <div class="h-[calc(105vh-25rem)] overflow-y-auto overscroll-contain pr-1 no-scrollbar scroll-smooth">
+                        <!-- CPU section  -->
+                            <p class="font-bold" id="CPU">CPU</p>
+
+                            <div class="owl-carousel owl-theme ">
+                                
+                                <!-- box1 section  -->
+                                    <a href="../cpu/AMD5600.html">
+                                        <div class="item  mt-5 mr-3 ">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/cpu/AMD5600.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p ><span class="text-red-500  ml-0.5">AMD </span>: AM4 RYZEN 5 5600</p>
+                                                    <P class="ml-0.5">3.5GHz  6C  12T</P>
+
+                                                </div>
+
+                                            </section>
+                                    </div>
+                                    </a>
+                                <!-- box1 section  -->
+                                    
+                                <!-- box2 section  -->
+                                    <a href="../cpu/AMD5500.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/cpu/AMD5500.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-red-500">AMD </span>: AM4 RYZEN 5 5500</p>
+                                                    <P>3.6GHz  6C  12T</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box2 section  -->
+                                    
+                                <!-- box3 section  -->
+                                    <a href="../cpu/AMD9700x.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/cpu/AMD9700x.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-red-500">AMD </span>: AM5 RYZEN 7 9700X</p>
+                                                    <P>3.8GHz  8C  16T  (3Y)</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box3 section  -->
+                                    
+                                <!-- box4 section  -->
+                                    <a href="../cpu/Intel i5-12400F.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/cpu/Intel i5-12400F.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">INTEL </span>: CORE I5-12400F</p>
+                                                    <P>2.5GHz  6C  12T</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box4 section  -->
+                                    
+                                <!-- box5 section  -->
+                                    <a href="../cpu/Intel i5-14500.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/cpu/Intel i5-14500.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">INTEL </span>: CORE I5-14500</p>
+                                                    <P>5.0GHz  14C  20T</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box5 section  -->
+                                    
+                                <!-- box6 section  -->
+                                    <a href="../cpu/Intel i7-14700KF.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/cpu/Intel  i7-14700KF.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">INTEL </span>: CORE I7-14700KF</p>
+                                                    <P>3.4GHz  20C  28T</P>
+
+                                                </div>
+
+                                            </section>                        
+                                    </div>
+                                    </a>
+                                <!-- box6 section  -->
+
+                            </div>
+                        <!-- CPU section  -->
+
+                        <!-- MAINBOARD section  -->
+                            <p class="mt-5 scroll-mt-65 font-bold" id="MAINBOARD">MAINBOARD</p>
+
+                            <div class="owl-carousel owl-theme ">
+                                
+                                <!-- box1 section  -->
+                                    <a href="../mainboard/GIGABYTE A520M.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/MAINBOARD/MAINBOARD (AM4) GIGABYTE A520M K V2 (REV.1.1).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-purple-500">GIGABYTE </span>: AM4  A520M</p>
+                                                    <P>K  V2  (REV.1.1)</P>
+
+                                                </div>
+
+                                            </section>
+                                        </div>
+                                    </a>
+                                <!-- box1 section  -->
+                                    
+                                <!-- box2 section  -->
+                                    <a href="../mainboard/GIGABYTE B760M.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/MAINBOARD/MAINBOARD (1700) GIGABYTE B760M GAMING WIFI6 PLUS GEN5 DDR5 (REV.1.0).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-purple-500">GIGABYTE </span>: B760M GAMING </p>
+                                                    <P>WIFI6 PLUS GEN5 DDR5 </P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box2 section  -->
+                                    
+                                <!-- box3 section  -->
+                                    <a href="../mainboard/MSI A520M.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/MAINBOARD/MAINBOARD (AM4) MSI A520M-A-PRO.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-orange-500">MSI </span>: A520M-A PRO AMD</p>
+                                                    <P>SOCKET AM4 DDR4 </P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box3 section  -->
+                                    
+                                <!-- box4 section  -->
+                                    <a href="../mainboard/MSI PRO B760M-P.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/MAINBOARD/MAINBOARD (1700) MSI PRO B760M-P DDR5.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-orange-500">MSI </span>: (1700) B760M-P DDR5</p>
+                                                    <P>14thGen 13thGen 12thGen</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box4 section  -->
+                                    
+                                <!-- box5 section  -->
+                                    <a href="../mainboard/ASUS PRIME A620M.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/MAINBOARD/MAINBOARD (AM5) ASUS PRIME A620M-K.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">ASUS </span>: AM5 ASUS</p>
+                                                    <P>PRIME A620M-K</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box5 section  -->
+                                    
+                                <!-- box6 section  -->
+                                    <a href="../mainboard/ASUS PRIME B760M.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/MAINBOARD/MAINBOARD (1700) ASUS PRIME B760M-A.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">ASUS </span>: 1700 ASUS</p>
+                                                    <P>PRIME B760M-A</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box6 section  -->
+
+                            </div>
+                        <!-- MAINBOARD section  -->
+
+                        <!-- GPU section  -->
+                            <p class="mt-5 scroll-mt-65 font-bold" id="GPU">GPU</p>
+
+                            <div class="owl-carousel owl-theme ">
+                                
+                                <!-- box1 section  -->
+                                    <a href="../gpu/GIGABYTE GEFORCE RTX 5060 WINDFORCE OC 8G - 8GB GDDR7 (GV-N5060WF2OC-8GD) (3Y).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/VGA2/VGA GIGABYTE GEFORCE RTX 5060 WINDFORCE OC 8G - 8GB GDDR7 (GV-N5060WF2OC-8GD) (3Y).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">GIGABYTE </span>: RTX 5060</p>
+                                                    <P>OC 8G - 8GB GDDR7</P>
+
+                                                </div>
+
+                                            </section>
+                                        </div>
+                                    </a>
+                                <!-- box1 section  -->
+                                    
+                                <!-- box2 section  -->
+                                    <a href="../gpu/GIGABYTE GEFORCE RTX 5060 TI WINDFORCE 8G - 8GB GDDR7 (GV-N506TWF2-8GD) (3Y).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/VGA2/VGA GIGABYTE GEFORCE RTX 5060 TI WINDFORCE 8G - 8GB GDDR7 (GV-N506TWF2-8GD) (3Y).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">GIGABYTE </span>: RTX 5060 TI</p>
+                                                    <P>8G - 8GB GDDR7</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box2 section  -->
+                                    
+                                <!-- box3 section  -->
+                                    <a href="../gpu/GIGABYTE GEFORCE RTX 5060 TI WINDFORCE OC 16G - 16GB GDDR7 (GV-N506TWF2OC-16GD) (3Y).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/VGA2/VGA GIGABYTE GEFORCE RTX 5060 TI WINDFORCE OC 16G - 16GB GDDR7 (GV-N506TWF2OC-16GD) (3Y).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">GIGABYTE </span>: RTX 5060 T</p>
+                                                    <P>OC 16G - 16GB GDDR7</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box3 section  -->
+                                    
+                                <!-- box4 section  -->
+                                    <a href="../gpu/GIGABYTE RADEON RX 9060 XT GAMING OC - 16GB GDDR6 (GV-R9060XTGAMING OC-16GD) (3Y).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/VGA2/VGA GIGABYTE RADEON RX 9060 XT GAMING OC - 16GB GDDR6 (GV-R9060XTGAMING OC-16GD) (3Y).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">GIGABYTE </span>: RX 9060 XT</p>
+                                                    <P>GAMING OC - 16GB GDDR6</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box4 section  -->
+                                    
+                                <!-- box5 section  -->
+                                    <a href="../gpu/ASUS DUAL RADEON RX 7600 O8G-EVO - 8GB GDDR6.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/VGA2/VGA ASUS DUAL RADEON RX 7600 O8G-EVO - 8GB GDDR6.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-red-500">ASUS </span>: RX 7600</p>
+                                                    <P>O8G-EVO - 8GB GDDR6</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box5 section  -->
+                                    
+                                <!-- box6 section  -->
+                                    <a href="../gpu/XFX SWIFT RADEON RX 9060 XT OC WHITE - 16GB GDDR6 (RX-96TS316W7) (3Y).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/VGA2/VGA XFX SWIFT RADEON RX 9060 XT OC WHITE - 16GB GDDR6 (RX-96TS316W7) (3Y).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-red-500">XFX </span>: RX 9060 XT OC</p>
+                                                    <P>WHITE - 16GB GDDR6</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box6 section  -->
+
+                            </div>
+                        <!-- GPU section  -->
+
+                        <!-- RAM section  -->
+                            <p class="mt-5 scroll-mt-65 font-bold" id="RAM">RAM</p>
+
+                            <div class="owl-carousel owl-theme ">
+                                
+                                <!-- box1 section  -->
+                                    <a href="../ram/GeIL ORION PHANTOM GAMING 16GB (8x2) DDR4 3200MHz GRAY (GAOG416GB3200C16BDC) (LT).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/RAM/RAM GeIL ORION PHANTOM GAMING 16GB (8x2) DDR4 3200MHz GRAY (GAOG416GB3200C16BDC) (LT).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-red-500">GeIL </span>: ORION PHANTOM  </p>
+                                                    <P>16GB (8x2) DDR4 3200MHz</P>
+
+                                                </div>
+
+                                            </section>
+                                        </div>
+                                    </a>
+                                <!-- box1 section  -->
+                                    
+                                <!-- box2 section  -->
+                                    <a href="../ram/KINGSTON FURY BEAST RGB 32GB (16x2) DDR5 5600MHz BLACK (KF556C40BBAK2-32) (LT).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/RAM/RAM (แรม) KINGSTON FURY BEAST RGB 32GB (16x2) DDR5 5600MHz BLACK (KF556C40BBAK2-32) (LT).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-white">KINGSTON </span>: FURY BEAST</p>
+                                                    <P>32GB (16x2) DDR5 5600MHz</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box2 section  -->
+                                    
+                                <!-- box3 section  -->
+                                    <a href="../ram/KINGSTON FURY RENEGADE RGB 64GB (32x2) DDR5 6400MHz WHITE (INTEL XMP) (KF564C32RWAK2-64) (LT).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/RAM/RAM KINGSTON FURY RENEGADE RGB 64GB (32x2) DDR5 6400MHz WHITE (INTEL XMP) (KF564C32RWAK2-64) (LT).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-white">KINGSTON </span>: FURY </p>
+                                                    <P>64GB (32x2) DDR5 6400MHz</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box3 section  -->
+                                    
+                                <!-- box4 section  -->
+                                    <a href="../ram/KLEVV BOLT V 32GB (16x2) DDR5 6000MHz (PURE WHITE)(KD5AGUA80-60B280I) (LT).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/RAM/RAM KLEVV BOLT V 32GB (16x2) DDR5 6000MHz (PURE WHITE)(KD5AGUA80-60B280I) (LT).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-gray-300">KLEVV </span>: BOLT V</p>
+                                                    <P>32GB (16x2) DDR5 6000MHz</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box4 section  -->
+                                    
+                                <!-- box5 section  -->
+                                    <a href="../ram/KLEVV CRAS V RGB 64GB (32x2) DDR5 6400MHz WHITE (KD5BGUA80-64A320J) (LT).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/RAM/RAM KLEVV CRAS V RGB 64GB (32x2) DDR5 6400MHz WHITE (KD5BGUA80-64A320J) (LT).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-gray-300">KLEVV </span>: CRAS V RGB</p>
+                                                    <P>64GB (32x2) DDR5 6400MHz</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box5 section  -->
+                                    
+                                <!-- box6 section  -->
+                                    <a href="../ram/PREDATOR VESTA II RGB 32GB (16x2) DDR5 6000MHz SILVER (BL.9BWWR.653) (LT).html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/RAM/RAM PREDATOR VESTA II RGB 32GB (16x2) DDR5 6000MHz SILVER (BL.9BWWR.653) (LT).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-white">PREDATOR </span>: VESTA II RGB</p>
+                                                    <P>(16x2) DDR5 6000MHz</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box6 section  -->
+
+                            </div>
+                        <!-- RAM section  -->
+
+                        <!-- M.2 section  -->
+                            <p class="mt-5 scroll-mt-65 font-bold" id="M.2">M.2</p>
+
+                            <div class="owl-carousel owl-theme ">
+                                
+                                <!-- box1 section  -->
+                                    <a href="../m.2/WD500.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/M2/ChatGPT Image Nov 1, 2025, 11_43_02 PM.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-cyan-500">WD BLUE </span>: SN5000 500GB</p>
+                                                    <P>PCIe/NVMe GEN4</P>
+
+                                                </div>
+
+                                            </section>
+                                        </div>
+                                    </a>
+                                <!-- box1 section  -->
+                                    
+                                <!-- box2 section  -->
+                                    <a href="../m.2/LEXAR512.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/M2/ChatGPT Image Nov 2, 2025, 10_33_40 PM.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-gray-200">LEXAR </span>: NQ780 512GB</p>
+                                                    <P>PCIe/NVMe GEN4x4</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box2 section  -->
+                                    
+                                <!-- box3 section  -->
+                                    <a href="../m.2/WD1TB.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/M2/ChatGPT Image Nov 2, 2025, 10_45_35 PM.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-cyan-500">WD BLUE </span>:SN5000 1TB </p>
+                                                    <P>PCIe/NVMe GEN4 </P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box3 section  -->
+                                    
+                                <!-- box4 section  -->
+                                    <a href="../m.2/LEXAR1TB.html">
+                                        <div class="item  mt-5 mr-5">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/M2/ChatGPT Image Nov 2, 2025, 10_53_33 PM.png" alt="">
+                                                </div>
+
+                                                <div class="p-1">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-gray-200">LEXAR </span>: NQ780 1TB</p>
+                                                    <P>PCIe/NVMe GEN4x4</P>
+
+                                                </div>
+
+                                            </section>                        
+                                    </div>
+                                    </a>
+                                <!-- box4 section  -->
+                                    
+                                <!-- box5 section  -->
+                                    <a href="../m.2/WD2TB.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/M2/ChatGPT Image Nov 2, 2025, 10_57_43 PM.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-cyan-500">WD BLUE </span>: SN5000 2TB</p>
+                                                    <P>PCIe/NVMe GEN4x4</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box5 section  -->
+                                    
+                                <!-- box6 section  -->
+                                    <a href="../m.2/LEXAR2TB.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover "
+                                                    src="../photo/M2/ChatGPT Image Nov 2, 2025, 10_59_40 PM.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-gray-200">LEXAR </span>: NQ790 2TB</p>
+                                                    <P>PCIe/NVMe GEN4x4</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box6 section  -->
+
+                            </div>
+                        <!-- M.2 section  -->
+
+                        <!-- MONITOR section  -->
+                            <p class="mt-5 scroll-mt-65 font-bold" id="MONITOR">MONITOR</p>
+
+                            <div class="owl-carousel owl-theme ">
+                                
+                                <!-- box1 section  -->
+                                   <a href="../monitor/LENOVE.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px] "
+                                                    src="../photo/MONITOR/MONITOR LENOVO L22-4E – 21.5 IPS FHD 100Hz.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">LENOVO </span>: L22-4E – 21.5"</p>
+                                                    <P>IPS FHD 100Hz</P>
+
+                                                </div>
+
+                                            </section>
+                                        </div>
+                                   </a>
+                                <!-- box1 section  -->
+                                    
+                                <!-- box2 section  -->
+                                    <a href="../monitor/XIAOMI.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/MONITOR/MONITOR XIAOMI MONITOR A24i - 23.8 IPS FHD 100Hz.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">XIAOMI </span>: A24i - 23.8</p>
+                                                    <P>IPS FHD 100Hz</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box2 section  -->
+                                    
+                                <!-- box3 section  -->
+                                   <a href="../monitor/MSI.html">
+                                     <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/MONITOR/MONITOR MSI PRO MP251L E2 - 24.5 IPS FHD 120Hz.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">MSI </span>: PRO MP251L E2 - 24.5</p>
+                                                    <P>IPS FHD 120Hz</P>
+
+                                                </div>
+
+                                            </section>                        
+                                    </div>
+                                   </a>
+                                <!-- box3 section  -->
+                                    
+                                <!-- box4 section  -->
+                                    <a href="../monitor/AOC.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/MONITOR/ChatGPT Image Nov 6, 2025, 08_32_41 PM.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">AOC </span>: 27G42E/67 27</p>
+                                                    <P>IPS FHD 180Hz</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box4 section  -->
+                                    
+                                <!-- box5 section  -->
+                                    <a href="../monitor/XIAOMI200hz.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/MONITOR/MONITOR XIAOMI GAMING G24i (68364) - 23.8 IPS FHD 200Hz.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">XIAOMI </span>: GAMING G24i  23.8</p>
+                                                    <P>FHD 200Hz</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box5 section  -->
+                                    
+                                <!-- box6 section  -->
+                                    <a href="../monitor/LG.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/MONITOR/MONITOR LG 32GS95UV-B - 31.5 OLED 240Hz 4K.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">LG </span>: 32GS95UV-B - 31.5</p>
+                                                    <P>OLED 240Hz 4K</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box6 section  -->
+
+                            </div>
+                        <!-- MONITOR section  -->
+
+                        <!-- Gaming Gear section  -->
+                            <p class="mt-5 scroll-mt-65 font-bold" id="Gaming Gear">Gaming Gear</p>
+
+                            <div class="owl-carousel owl-theme ">
+                                
+                                <!-- box1 section  -->
+                                    <a href="../gameing gear.html/keyboard.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/Gameming/KEYBOARD RAZER ORNATA V3.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">RAZER </span>: ORNATA V3 (BLACK)</p>
+                                                    <P>(MEMBRANE) (EN/TH)</P>
+
+                                                </div>
+
+                                            </section>
+                                        </div>
+                                    </a>
+                                <!-- box1 section  -->
+                                    
+                                <!-- box2 section  -->
+                                    <a href="../gameing gear.html/moun.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/Gameming/RAZER DEATHADDER ESSENTIAL.png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">RAZER </span>: DEATHADDER</p>
+                                                    <P>ESSENTIAL</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box2 section  -->
+                                    
+                                <!-- box3 section  -->
+                                    <a href="../gameing gear.html/mebedium.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/Gameming/MOUSE PAD RAZER GOLIATHUS CHROMA SOFT (MEDIUM).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">RAZER </span>: GOLIATHUS</p>
+                                                    <P>SOFT (MEDIUM)</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box3 section  -->
+                                    
+                                <!-- box4 section  -->
+                                    <a href="../gameing gear.html/headphon.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/Gameming/HEADSET RAZER BLACKSHARK V2 X (GREEN).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">RAZER </span>: BLACKSHARK</p>
+                                                    <P>V2 X (GREEN)</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box4 section  -->
+                                    
+                                <!-- box5 section  -->
+                                    <a href="../gameing gear.html/shear1.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px]"
+                                                    src="../photo/Gameming/[BY ORDER] GAMING CHAIR EGA TYPE G7+ CARBON PU (BLACK).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">EGA </span>: TYPE G7+</p>
+                                                    <P>CARBON PU (BLACK)</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box5 section  -->
+                                    
+                                <!-- box6 section  -->
+                                    <a href="../gameing gear.html/shear2.html">
+                                        <div class="item  mt-5 mr-3">
+                                            <section class="item bg-zinc-800/[0.5] cursor-pointer overflow-hidden rounded-lg hover:scale-105 traslate-all duration-700 ease-in-out">
+                                                    
+                                                <div>
+                                                    <img 
+                                                    class="object-cover h-[221px] "
+                                                    src="../photo/Gameming/[BY ORDER] GAMING CHAIR EGA TYPE G9 (BLACK).png" alt="">
+                                                </div>
+
+                                                <div class="p-1.5">
+                                                    <section class="flex justify-between">
+                                                        <div class="flex space-x-4">
+                                                            <i class="fa-regular fa-circle-play"></i>
+                                                            <i class="fa-solid fa-bell"></i>
+                                                        </div>
+
+                                                        <div class="mr-2">
+                                                            <i class="fa-solid fa-bars"></i>
+                                                        </div>
+
+                                                    </section>
+
+                                                    <p><span class="text-green-500">EGA </span>: TYPE G9 (BLACK)</p>
+                                                    <P>GAMING CHAIR</P>
+
+                                                </div>
+
+                                            </section>                        
+                                        </div>
+                                    </a>
+                                <!-- box6 section  -->
+
+                            </div>
+                        <!-- Gaming Gear section  -->
+                    </div>    
+                </section>
+                
+                
+                
+            
+            
+            
+        <!-- content section  -->
+        
+
+        <!-- right menu  -->
+
+        <div class="fixed bg-zinc-900 rounded-2xl p-5 shadow-lg border border-zinc-800 mt-24 ml-[1550px] w-80">
+            <h2 class="text-white text-lg font-semibold  items-center gap-2 mb-2">
+                <span>📘</span> เเนะนำคอมพิวเตอร์
+            </h2>
+            <p class="text-gray-400 text-sm mb-4">
+                หัวข้อย่อยที่เกี่ยวข้องกับคอมพิวเตอร์ คลิกเพื่ออ่านเนื้อหาที่คุณสนใจ
+            </p>
+            <ul class="space-y-3">
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/1.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 ประเภทของ CPU
+                </a>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/2.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 สิ่งที่ต้องรู้ก่อนซื้อ CPU
+                </a>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/3.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 โครงสร้างและหน้าที่ของ CPU
+                </a>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/4.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 ซื้อคอมตัวหนึ่งเราต้องรู้อะไรบ้าง
+                </a>
+                </li>
+                
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/5.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 เเนะนำพิเศษ(ฟามปล่อยบอท)
+                </a>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/6.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 เกณฑ์สำคัญในการเลือกเมนบอร์ด
+                </a>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/7.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 เกณฑ์สำคัญในการเลือกการ์ดจอ
+                </a>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/8.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 เกณฑ์สำคัญในการเลือกเเรม (ram)
+                </a>
+                </li>
+                
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/9.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 เกณฑ์สำคัญในการเลือก M.2
+                </a>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/10.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 เกณฑ์สำคัญในการเลือกmonitor
+                </a>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/11.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 ประกันใช้ทำอะไรได้บ้าง
+                </a>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/12.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 ข้อที่ควรระวังเรื่องการประกันสินค้า
+                </a>
+                </li>
+                </li>
+                <li class="border-t border-zinc-800 pt-3">
+                <a href="../recomment/13.html" class="block text-gray-300 hover:text-red-400 transition">
+                    🔹 วิธีขั้นตอนการใช้ประกันเครมสินค้า
+                </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- right menu  -->
+
+    </div>
+
+        <!-- script -->
+            <script>
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:10,
+                    nav:true,
+                    dots: false,
+                    nav: false,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:3
+                        },
+                        1000:{
+                            items:5
+                        }
+                    }
+                })
+            </script>
+        <!-- script -->
+
+         <!-- script  ของjava ทำหน้าที่เลื่อนรูปภาพข้างบนตรงกลาง-->
+            <script>
+                const slider = document.getElementById('slider');
+                const slides = slider.children.length;
+                let index = 0;
+
+                function showSlide(i) {
+                    index = (i + slides) % slides;
+                    slider.style.transform = `translateX(-${index * 100}%)`;
+                }
+
+                document.getElementById('next').addEventListener('click', () => showSlide(index + 1));
+                document.getElementById('prev').addEventListener('click', () => showSlide(index - 1));
+
+                // ✅ Auto Slide
+                setInterval(() => showSlide(index + 1), 4000);
+            </script>
+        <!-- script  -->
+
+        
+</body>
+</html>
